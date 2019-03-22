@@ -7,6 +7,7 @@ sap.ui.define([
 	return BaseController.extend("vishnu.ProductList.controller.App", {
 
 		onInit : function () {
+			alert("Hello SAP World");
 			var oViewModel,
 				fnSetAppNotBusy,
 				iOriginalBusyDelay = this.getView().getBusyIndicatorDelay();
