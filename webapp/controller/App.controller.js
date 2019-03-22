@@ -1,13 +1,15 @@
 sap.ui.define([
 	"./BaseController",
-	"sap/ui/model/json/JSONModel"
-], function (BaseController, JSONModel) {
+	"sap/ui/model/json/JSONModel",
+	"sap/m/MessageToast"
+], function (BaseController, JSONModel,MessageToast) {
 	"use strict";
 
 	return BaseController.extend("vishnu.ProductList.controller.App", {
 
 		onInit : function () {
-			alert("Hello SAP World");
+			var n = "vishnu";
+			MessageToast.show(n);
 			var oViewModel,
 				fnSetAppNotBusy,
 				iOriginalBusyDelay = this.getView().getBusyIndicatorDelay();
