@@ -10,6 +10,7 @@ sap.ui.define([
 		onInit : function () {
 			var n = "vishnu";
 			MessageToast.show(n);
+			alert(n);
 			var oViewModel,
 				fnSetAppNotBusy,
 				iOriginalBusyDelay = this.getView().getBusyIndicatorDelay();
